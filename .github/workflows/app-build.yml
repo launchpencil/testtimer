@@ -18,13 +18,13 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: ghcr.io
-        username: launhpencil
+        username: launchpencil
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: meta
       id: meta
       uses: docker/metadata-action@v3
       with:
-          images: ghcr.io/launhpencil/testtimer
+          images: ghcr.io/launchpencil/testtimer
     # 5. setup buildx
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
@@ -38,4 +38,4 @@ jobs:
         context: app
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ghcr.io/launhpencil/testtimer:latest
+        tags: ghcr.io/launchpencil/testtimer:latest
