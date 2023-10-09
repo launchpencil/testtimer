@@ -1,0 +1,17 @@
+{
+    "name": "タイマーアプリ",
+    "short_name": "タイマー",
+    "description": "簡易タイマーアプリ",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "240x240"
+        }
+    ]
+  }
+  
